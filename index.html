@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dragon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #4a00e0;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    select {
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .search-icon {
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    /* Main Hero Section */
+    .main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 40px;
+      background: linear-gradient(to right, #f0f0ff, #fafaff);
+    }
+
+    .text-content {
+      max-width: 50%;
+    }
+
+    .text-content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #4a00e0;
+    }
+
+    .text-content p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .image-circle {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 6px solid #4a00e0;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .image-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Grid Section */
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 60px 40px;
+    }
+
+    .grid-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .grid-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .grid-box h2 {
+      font-size: 20px;
+      color: #4a00e0;
+      margin-bottom: 10px;
+    }
+
+    .grid-box p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* Centered Image & Paragraph */
+    .centered-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 40px;
+    }
+
+    .centered-section .image-circle {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+
+    .centered-section p {
+      max-width: 600px;
+      text-align: center;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #4a00e0;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .main {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+      }
+
+      .text-content {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="title">NAGABABU</div>
+    <div class="header-controls">
+      <select><option>Personal</option></select>
+      <select><option>Category</option></select>
+      <select><option>Help</option></select>
+      <div class="search-icon">🔍</div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="main">
+    <div class="text-content">
+      <h1>Welcome to Our Platform</h1>
+      <p>Discover tools and insights designed to simplify your work and maximize productivity with ease.</p>
+    </div>
+    <div class="image-circle">
+      <img src="https://via.placeholder.com/250" alt="Hero Image" />
+    </div>
+  </section>
+
+  <!-- Grid Section -->
+  <section class="grid-section">
+    <div class="grid-box">
+      <h2>Analytics</h2>
+      <p>Track key metrics and performance indicators to gain actionable insights.</p>
+    </div>
+    <div class="grid-box">
+      <h2>Collaboration</h2>
+      <p>Work together in real-time with powerful sharing and communication tools.</p>
+    </div>
+    <div class="grid-box">
+      <h2>Security</h2>
+      <p>Your data is protected with industry-leading encryption and privacy protocols.</p>
+    </div>
+  </section>
+
+  <!-- Centered Image & Paragraph -->
+  <section class="centered-section">
+    <div class="image-circle">
+      <img src="https://via.placeholder.com/200" alt="Centered Image" />
+    </div>
+    <p>
+      Our platform puts you in control, offering intuitive features wrapped in a beautiful, easy-to-use interface.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
