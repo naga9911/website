@@ -43,11 +43,8 @@
       padding: 8px 12px;
       border-radius: 8px;
       border: 1px solid #1decd1;
-    }
-
-    .search-icon {
-      font-size: 20px;
-      cursor: pointer;
+      background-color: #f0f8ff;
+      color: #333;
     }
 
     /* Main Hero Section */
@@ -209,17 +206,19 @@
 
   <!-- Header -->
   <header>
-    <div class="title">NAGABABU</div>
+    <div class="title" style="font-family: 'Arial Black', sans-serif; color: #ff4500;">DRAGON</div>
     <div class="header-controls">
-      <select>
-        <option>Personal</option>
-        <option>Personal</option>
-        <option>Personal</option>
+      <select onchange="if(this.value) window.location.href=this.value;">
+        <option value="">Select Page</option>
+        <option value="drop1.html">Personal</option>
+        <option value="drop1.html">Work</option>
+        <option value="drop1.html">Projects</option>
       </select>
       <select>
-        <option>Category</option>
-        <option>Category</option>
-        <option>Category</option>
+        <option value="">Category</option>
+        <option value="category1.html">Category 1</option>
+        <option value="category2.html">Category 2</option>
+        <option value="category3.html">Category 3</option>
       </select>
       
     </div>
@@ -228,8 +227,8 @@
   <!-- Hero Section -->
   <section class="main">
     <div class="text-content">
-      <h1>Welcome to Our Platform</h1>
-      <p>Explore tools and insights crafted to streamline your testing workflows and accelerate software development with precision and efficiency.</p>
+      <h1>Unleash Your Potential with Our Cutting-Edge Platform</h1>
+      <p>Discover a suite of innovative tools and actionable insights designed to optimize your workflows, enhance productivity, and drive success in software development and beyond.</p>
     </div>
     <div class="image-circle">
       <img src="unnamed.jpg" alt="Hero Image" />
@@ -241,14 +240,29 @@
     <div class="grid-box">
       <h2>Analytics</h2>
       <p>Track key metrics and performance indicators to gain actionable insights.</p>
+      <br>
+      <button style="display: flex; align-items: center; gap: 5px; padding: 10px 20px; background-color: #4a00e0; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-size: 16px;">
+        Learn More
+        <span style="display: inline-block; transform: rotate(-45deg); border: solid #fff; border-width: 0 2px 2px 0; padding: 5px; margin-left: 5px;"></span>
+      </button>
     </div>
     <div class="grid-box">
       <h2>Collaboration</h2>
       <p>Work together in real-time with powerful sharing and communication tools.</p>
+      <br>
+      <button style="display: flex; align-items: center; gap: 5px; padding: 10px 20px; background-color: #4a00e0; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-size: 16px;">
+        Learn More
+        <span style="display: inline-block; transform: rotate(-45deg); border: solid #fff; border-width: 0 2px 2px 0; padding: 5px; margin-left: 5px;"></span>
+      </button>
     </div>
     <div class="grid-box">
       <h2>Security</h2>
       <p>Your data is protected with industry-leading encryption and privacy protocols.</p>
+      <br>
+      <button style="display: flex; align-items: center; gap: 5px; padding: 10px 20px; background-color: #4a00e0; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-size: 16px;">
+        Learn More
+        <span style="display: inline-block; transform: rotate(-45deg); border: solid #fff; border-width: 0 2px 2px 0; padding: 5px; margin-left: 5px;"></span>
+      </button>
     </div>
   </section>
 
@@ -258,13 +272,18 @@
       <img src="unnamed.jpg" alt="Centered Image" />
     </div>
     <p>
-      Our platform puts you in control, offering intuitive features wrapped in a beautiful, easy-to-use interface.
+      <span style="color: #f2f0f7;">Experience the future of innovation with a platform designed to empower, inspire, and elevate your journey.</span>
     </p>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 My Website. All rights reserved.</p>
+    <div style="margin-top: 20px; font-size: 14px;">
+      <p>Address: 123 Innovation Drive, Tech City, TX 75001</p>
+      <p>Email: contact@mywebsite.com</p>
+      <p>Mobile: +1 (555) 123-4567</p>
+    </div>
   </footer>
 
 </body>
