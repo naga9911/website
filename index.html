@@ -13,7 +13,7 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
+      background: #ada9a9;
       color: #333;
     }
 
@@ -23,7 +23,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
-      background-color: #fff;
+      background-color: #ebe4e4;
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
 
@@ -42,7 +42,7 @@
     select {
       padding: 8px 12px;
       border-radius: 8px;
-      border: 1px solid #ccc;
+      border: 1px solid #1decd1;
     }
 
     .search-icon {
@@ -161,11 +161,47 @@
         flex-direction: column;
         text-align: center;
         gap: 40px;
+        padding: 20px;
       }
+      .header-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+      .text-content h1 {
+    font-size: 28px;
+  }
+  .text-content p {
+    font-size: 16px;
+  }
+  .image-circle {
+    width: 200px;
+    height: 200px;
+  }
+  .grid-section {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+  .grid-box {
+    padding: 20px;
+  }
+  .centered-section {
+    padding: 40px 20px;
+  }
+  .centered-section .image-circle {
+    width: 160px;
+    height: 160px;
+  }
+  .centered-section p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  footer {
+    padding: 20px;
+  }
 
-      .text-content {
-        max-width: 100%;
-      }
+  footer p {
+    font-size: 14px;
+  }
     }
   </style>
 </head>
@@ -175,10 +211,17 @@
   <header>
     <div class="title">NAGABABU</div>
     <div class="header-controls">
-      <select><option>Personal</option></select>
-      <select><option>Category</option></select>
-      <select><option>Help</option></select>
-      <div class="search-icon">🔍</div>
+      <select>
+        <option>Personal</option>
+        <option>Personal</option>
+        <option>Personal</option>
+      </select>
+      <select>
+        <option>Category</option>
+        <option>Category</option>
+        <option>Category</option>
+      </select>
+      
     </div>
   </header>
 
@@ -186,10 +229,10 @@
   <section class="main">
     <div class="text-content">
       <h1>Welcome to Our Platform</h1>
-      <p>Discover tools and insights designed to simplify your work and maximize productivity with ease.</p>
+      <p>Explore tools and insights crafted to streamline your testing workflows and accelerate software development with precision and efficiency.</p>
     </div>
     <div class="image-circle">
-      <img src="https://via.placeholder.com/250" alt="Hero Image" />
+      <img src="unnamed.jpg" alt="Hero Image" />
     </div>
   </section>
 
@@ -212,7 +255,7 @@
   <!-- Centered Image & Paragraph -->
   <section class="centered-section">
     <div class="image-circle">
-      <img src="https://via.placeholder.com/200" alt="Centered Image" />
+      <img src="unnamed.jpg" alt="Centered Image" />
     </div>
     <p>
       Our platform puts you in control, offering intuitive features wrapped in a beautiful, easy-to-use interface.
